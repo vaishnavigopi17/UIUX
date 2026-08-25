@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+    <style>
+            form{
+                text-align: center;
+            }
+        </style>
+</head>
+<body align="center">
+        <h1>My feedback form</h1>
+</body>
+<form>
+        Name:<input type="text" name="Name" maxlength="20" placeholder="Enter your name" required><br>
+        Email:<input type="text" name="Email" placeholder="Enter your email ID" required><br>
+        Password:<input type="password" id="pass" name="pass" minlength="8" placeholder="Enter your password" required><br>
+
+    
+    <p><b><i>Please check all the emotions that apply to you:</i></b></p>
+
+<ul'>
+    <li>angry <input type="checkbox"></li>
+    <li>sad <input type="checkbox" ></li>
+    <li>happy <input type="checkbox"></li>
+    <li>ambivalent <input type="checkbox"></li>
+</ul>
+    <p><b><i> How satisfied are you with our service? </i></b></p>
+
+<ul'>
+    <li> Very satisfied<input type="radio" name="satisfaction" value="very satisfied"></li>
+    <li> Satisfied<input type ="radio" name="satisfaction" value="satisfied"></li>
+    <li> Didn't care <input type="radio" name="satisfaction" value="Didn't care"></li>
+    <li> Dissatisfied <input type="radio" name="satisfaction" value="dissatisfied" ></li>
+    <li> Very dissatisfied<input type ="radio"name="satisfaction" value="very dissatisfied"></li>
+</ul>
+
+    <b> Further Comments:</b>
+    <textarea name="name" rows="5" cols="50" required ></textarea><br>
+
+    <b> bio photo</b>
+    <input type="file" name="biophoto" accept="jpg, jpeg, png" required><br>
+
+    
+    <b>Loction visited:</b>
+    <select required>
+        <option value="">Select Loction</option>
+        <option value="London">Shanghai</option>
+        <option value="Berlin">London</option>
+        <option value="New York">New York</option>
+        <option value="Shanghai">Berlin</option>
+    </select> <br>
+
+    <input type="submit">
+    <input type="reset">
+</form>
+</html>
