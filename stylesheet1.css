@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("https://www.epicgardening.com/wp-content/uploads/2023/09/Lilium-Oriental-Trumpet-%E2%80%98Zeba.jpeg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+
+    background-color: rgb(88, 4, 4);
+}
+
+p {
+    color: rgb(124, 21, 21);
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+p{
+   text-align: center;
+   text-shadow:0dvh;
+   text-decoration: underline;
+   
+}
