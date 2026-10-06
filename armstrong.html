@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Armstrong Number Checker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 8px;
+            width: 200px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            display: none;
+            margin: 20px auto;
+            padding: 10px;
+            width: 350px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Armstrong Number Checker</h1>
+
+    <p>Enter a number:</p>
+
+    <input type="number" id="numberInput">
+
+    <button onclick="checkArmstrong()">Check</button>
+
+    <div id="result"></div>
+
+
+    <script>
+        function checkArmstrong() {
+
+            let input = document.getElementById("numberInput").value;
+
+            if (input === "") {
+                alert("Please enter a number.");
+                return;
+            }
+
+            let number = parseInt(input);
+
+            if (number < 0) {
+                alert("Please enter a positive number.");
+                return;
+            }
+
+            let numberString = number.toString();
+
+            let digits = numberString.length;
+
+            let sum = 0;
+
+            for (let i = 0; i < digits; i++) {
+
+                let digit = parseInt(numberString[i]);
+
+                sum = sum + Math.pow(digit, digits);
+            }
+
+            let result = document.getElementById("result");
+
+            result.style.display = "block";
+
+            if (sum === number) {
+                result.innerHTML =
+                    "<b>" + number + " is an Armstrong Number.</b>" +
+                    "<br>Calculated Sum = " + sum;
+            }
+            else {
+                result.innerHTML =
+                    "<b>" + number + " is NOT an Armstrong Number.</b>" +
+                    "<br>Calculated Sum = " + sum;
+            }
+        }
+    </script>
+
+</body>
+</html>
